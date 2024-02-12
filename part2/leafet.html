@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici Bicing - Part 2</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+
+    <style>
+        #map {
+            border: 4px solid seagreen;
+            width: 480px;
+            height: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h1>Leafet Bicing Barcelona</h1>
+    <div id="map"></div>
+    <script src="./adria_vallejo_proanyo.js"></script>
+
+    <!-- Agrega un elemento div para la leyenda fuera del mapa -->
+<div id="legend" style="position: absolute; bottom: 20px; right: 20px; background-color: white; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+    <h4>Leyenda</h4>
+    <div><i style="background:#008000; width: 20px; height: 20px; display: inline-block;"></i> Menos de 5 bicicletas</div>
+    <div><i style="background:#FF0000; width: 20px; height: 20px; display: inline-block;"></i> Entre 5 y 9 bicicletas</div>
+    <div><i style="background:#FFFF00; width: 20px; height: 20px; display: inline-block;"></i> Entre 10 y 19 bicicletas</div>
+    <div><i style="background:#0000FF; width: 20px; height: 20px; display: inline-block;"></i> 20 o más bicicletas</div>
+  </div>
+  
+</body>
+</html>
